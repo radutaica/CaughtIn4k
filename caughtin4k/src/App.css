@@ -39,7 +39,8 @@
 .App-header nav {
   display: flex;
   width: 100%;
-  justify-content: space-between; /* Or center, depending on your design */
+  justify-content: space-between;
+  align-items: center; /* Or center, depending on your design */
   list-style: none; /* If using a <ul> */
 }
 
@@ -48,6 +49,7 @@
   justify-content: space-between; /* Adjust this as needed */
   padding: 0;
   margin: 0;
+  align-items: center;
   list-style: none;
 }
 

@@ -16,6 +16,9 @@ function Layout({ children }) {
         <nav>
           <ul>
             <li>
+            <h1 className="text-3xl font-bold ">Caught in 4k</h1>
+            </li>
+            <li>
               <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
             </li>
             <li>
