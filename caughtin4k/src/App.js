@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import './App.css';
 
@@ -31,10 +31,7 @@ function Layout({ children }) {
         </nav>
       </header>
       <main>{children}</main>
-      <footer>
-        {/* Footer content here */}
-        <p>© 2024 Your Website</p>
-      </footer>
+
     </>
   );
 }

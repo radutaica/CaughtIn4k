@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../index.css';
 // Assuming you have these components or will create them
 import HeroSection from '../Components/HeroSection';

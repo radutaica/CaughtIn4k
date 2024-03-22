@@ -1,6 +1,10 @@
 import React from 'react';
 import backgroundImage from '../Assets/background.jpg'
 function HeroSection() {
+  const onPress = () => {
+    console.log('Pressed')
+      
+  }
   return (
     <div className="bg-cover bg-center h-screen text-white py-40 px-10 object-fill">
       <div className='ml-20'>
@@ -9,7 +13,8 @@ function HeroSection() {
         <p className="text-xl mt-5 text-black" style={{ maxWidth: '1000px' }}>
           At Caught in 4K, we believe that style is a way to express who you are without having to speak. With a focus on modern, unique designs, our collections are crafted to stand out in a crowd. But we don't stop there - we offer you the canvas to create something truly unique. Our customization feature allows you to tailor our designs to your personal style, ensuring that what you wear is a true reflection of you.
         </p>
-        <button className="place-self-center mt-10 bg-black hover:bg-white text-white hover:text-black font-bold py-4 px-20 rounded-full ml-5">
+        <button className="place-self-center mt-10 bg-black hover:bg-white text-white hover:text-black font-bold py-4 px-20 rounded-full ml-5"
+        onClick={onPress}>
           Shop Now
         </button>
         <div className='flex mt-20'>
