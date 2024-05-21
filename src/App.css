@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Add this to your global CSS file or a CSS module */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.App-header {
+  background-color: #282c34;
+  height: 60px; /* Adjusted for a more typical e-commerce header height */
+  width: 100%;
+  position: fixed; /* Makes the header stay at the top */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row; /* Changed from column to row */
+  align-items: center; /* This will vertically center your items in the header */
+  justify-content: space-between; /* Adjust content spacing */
+  padding: 0 20px; /* Add some padding on the sides */
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Optional: adds a subtle shadow for depth */
+  z-index: 1000; /* Ensures the header is above other content */
+  font-size: 16px; /* Adjusted for readability */
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  margin-right: 15px; /* Space out links if you have multiple */
+}
+
+.App-header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center; /* Or center, depending on your design */
+  list-style: none; /* If using a <ul> */
+}
+
+.App-header nav ul {
+  display: flex;
+  justify-content: space-between; /* Adjust this as needed */
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  list-style: none;
+}
+
+.App-header nav ul li {
+  margin: 0 10px; /* Adds some space between your links */
+}
+
+/* Add additional styles for navigation links, search bar, etc., here */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
